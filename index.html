@@ -16,6 +16,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
     body {
+      background : linear-gradient(45deg,#2f1c53,#a46dff,#f6d1fd);
       font-family: 'Poppins', sans-serif;
     }
 
@@ -74,6 +75,7 @@ if (url.searchParams.get('by') != null) {
     sender = "Novaaa";
 }
 let footer = document.getElementById("credit");
+    footer.innerHTML = sender;
 footer.href = "https://www.instagram.com/novasugiantara_/";
 document.querySelector(".tombol").addEventListener('click', function() {
     Swal.fire("Hallo Sayangku", "Aku ada pertanyaan nih buat kamu?", "question").then(function() {
