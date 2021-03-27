@@ -65,17 +65,17 @@
 
   <!-- Optional JavaScript; choose one of the two! -->
   <script>
-    let nama, val;
+   let nama, val;
 const url_string = document.URL;
 const url = new URL(url_string);
 let sender;
 if (url.searchParams.get('by') != null) {
     sender = url.searchParams.get('by');
 } else {
-    sender = "Novaaa";
+    sender = "Adam";
 }
 let footer = document.getElementById("credit");
-    footer.innerHTML = sender;
+footer.innerHTML = sender;
 footer.href = "https://www.instagram.com/novasugiantara_/";
 document.querySelector(".tombol").addEventListener('click', function() {
     Swal.fire("Hallo Sayangku", "Aku ada pertanyaan nih buat kamu?", "question").then(function() {
